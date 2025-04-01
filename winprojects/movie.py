@@ -8,6 +8,13 @@ for yu in current_movies:
 
 user_choice = input('enter the movie name:')
                     
+showtime = current_movies.get(user_choice)
 
-print(current_movies[user_choice])
+if showtime:
+    print('showtime for movie:', user_choice,'is ', showtime)
+else:
+    print('movie not found')
+
+
+
 

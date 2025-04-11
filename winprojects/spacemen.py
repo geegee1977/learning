@@ -6,9 +6,20 @@ response = requests.get(url)
 
 
 
-print(response.status_code)
+if response.status_code == 200:
+    data=response.json()
+    print('There Are ', data.get('number'), 'people in space')
+    print('Their names are:')
+    for person in data.get('people'):
+        print(person['name'], ' is on the craft ', person['craft'])
 
-data=response.json()
+else:
+    print('Error:', response.status_code)
+    print('Error message:', response.text)
 
-print(data)
+
+
+
+
+
 

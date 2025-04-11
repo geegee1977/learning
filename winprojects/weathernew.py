@@ -2,9 +2,11 @@ import requests
 
 url="http://api.weatherapi.com/v1/current.json"
 
+City = input("Enter the city name: ")
+
 response = requests.get(url, params={
     'key': '5e559dc644fe4a63b4c161454251104',
-    'q': 'Edinburgh',
+    'q': City,
     'aqi': 'no'
 })
 

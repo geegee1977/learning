@@ -12,7 +12,7 @@ showtime = current_movies.get(user_choice)
 
 if showtime:
     print('showtime for movie:', user_choice,'is ', showtime)
-else:
+elif showtime == None:
     print('movie not found')
 
 

@@ -23,7 +23,7 @@ if response.status_code == 200:
     print(f"Response: {profiles}")
     print(f"Type: {type(profiles)}")
     # print(f"Existing DNS local profiles in organization {org_id}:")
-    # for profile in profiles:
-    #     print(f"ID: {profile['id']}, Name: {profile['name']}")
+    for profile in profiles["items"]:
+        print(f"ID: {profile['profileId']}, Name: {profile['name']}")
 else:
     print(f"Error: {response.status_code} - {response.text}")

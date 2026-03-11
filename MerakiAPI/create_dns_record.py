@@ -8,7 +8,7 @@ api_key = "bb37b6bf38563e79e0ecb30935cf28283e01f0fc"
 org_id = "1713187"
 
 # Meraki API endpoint for creating DNS local profile
-url = f"https://api.meraki.com/api/v1/organizations/{org_id}/appliance/dns/local/profiles"
+url = f"https://api.meraki.com/api/v1/organizations/{org_id}/appliance/dns/local/records"
 
 # Headers with API key
 headers = {
@@ -18,7 +18,9 @@ headers = {
 
 # Payload for the new DNS local profile
 payload = {
-    "name": "Default profile"
+    "hostname": "www.test.com",
+    "address": "10.1.1.0",
+    "profile": { "id": "4005951868546056228"}  # Replace with an actual profile ID from your organization
 }
 
 # Post the new DNS local profile

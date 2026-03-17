@@ -10,7 +10,7 @@ if not api_key:
     exit(1)
 
 # Meraki API endpoint
-url = "https://api.meraki.com/api/v1/organizations"
+url = "https://api.meraki.com/api/v1/organizations/1010901/networks"
 
 # Headers with API key
 headers = {

@@ -4,7 +4,7 @@ import pandas as pd
 # ----------------------------------------------------------
 # CONFIGURATION – fill these in
 # ----------------------------------------------------------
-API_KEY = "bb37b6bf38563e79e0ecb30935cf28283e01f0fc"
+API_KEY = "ommited"
 ORG_ID = "1010901"
 NETWORK_ID = "L_3909687426511012314"
 OUTPUT_FILE = "meraki_network_export.xlsx"

@@ -3,7 +3,7 @@ import os
 
 # Get API key from user
 # api_key = input("Enter your Meraki API key: ")
-api_key = "bb37b6bf38563e79e0ecb30935cf28283e01f0fc"
+api_key = "ommited"
 
 if not api_key:
     print("Error: MERAKI_API_KEY environment variable not set")

@@ -1,7 +1,7 @@
 import requests
 
 # API key from getorg.py
-api_key = "bb37b6bf38563e79e0ecb30935cf28283e01f0fc"
+api_key = "ommited"
 
 # Organization ID for Decorus
 org_id = "1713187"
